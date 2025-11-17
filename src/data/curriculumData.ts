@@ -1,4 +1,8 @@
+//
+// AI-Generated data bellow, don't give it much attention.
+//
 export const curriculumData = {
+
   personalInfo: {
     name: "Ana Silva Santos",
     title: "Desenvolvedora Full Stack",

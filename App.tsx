@@ -17,24 +17,31 @@ export default function App() {
       period: "2023 - Presente",
       description: "Desenvolvimento de projetos acadêmicos utilizando tecnologias modernas."
     },
+    {
+      company: "Iniciação Científica",
+      position: "Bolsista de Pesquisa",
+      period: "2023",
+      description: "Participação em projetos de pesquisa na área de tecnologia da informação."
+    }
   ];
 
   const education = [
     {
       institution: "UNINASSAU - Juazeiro do Norte",
       course: "Bacharelado em Sistemas de Informação",
-      year: "Previsão: 2027"
+      year: "Previsão: 2025"
     }
   ];
 
   const skills = {
     hardSkills: [
-      { name: "JavaScript", level: 75 },
-      { name: "HTML/CSS", level: 80 },
-      { name: "Java", level: 30 },
+      { name: "JavaScript", level: 25 },
+      { name: "HTML/CSS", level: 60 },
+      { name: "PHP", level: 50 },
+      { name: "Java", level: 10 },
       { name: "Python", level: 65 },
-      { name: "Banco de Dados", level: 70 },
-      { name: "Git/GitHub", level: 75 }
+      { name: "Banco de Dados", level: 30 },
+      { name: "Git/GitHub", level: 20 }
     ],
     softSkills: [
       { name: "Trabalho em Equipe", level: 85 },
@@ -46,11 +53,11 @@ export default function App() {
   };
 
   const contacts = {
-    email: "pedro.henrique@email.com",
-    phone: "+55 (88) 91234-5678",
-    linkedin: "https://linkedin.com/in/pedrohenrique",
-    github: "https://github.com/pedrohenrique",
-    portfolio: "https://pedrohenrique.dev"
+    email: "email.escolar174@gmail.com",
+    phone: "+55 (88) 99716-9894",
+    linkedin: "https://linkedin.com",
+    github: "https://github.com/stingy-namake",
+    portfolio: "https://idonthaveone.yet"
   };
 
   const handleEmailPress = () => {
@@ -75,19 +82,16 @@ export default function App() {
       <ScrollView style={styles.container}>
         <StatusBar style="auto" />
         
-        {/* Header */}
         <View style={styles.header}>
           <Text style={styles.name}>{personalInfo.name}</Text>
           <Text style={styles.title}>{personalInfo.title}</Text>
         </View>
 
-        {/* Sobre */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Sobre</Text>
           <Text style={styles.aboutText}>{personalInfo.about}</Text>
         </View>
 
-        {/* Formação Acadêmica */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Formação Acadêmica</Text>
           {education.map((edu, index) => (
@@ -99,7 +103,6 @@ export default function App() {
           ))}
         </View>
 
-        {/* Experiências */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Experiência</Text>
           {experiences.map((exp, index) => (
@@ -112,7 +115,6 @@ export default function App() {
           ))}
         </View>
 
-        {/* Habilidades Técnicas */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Habilidades Técnicas</Text>
           {skills.hardSkills.map((skill, index) => (
@@ -131,7 +133,6 @@ export default function App() {
           ))}
         </View>
 
-        {/* Habilidades Interpessoais */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Habilidades Interpessoais</Text>
           {skills.softSkills.map((skill, index) => (
@@ -150,7 +151,6 @@ export default function App() {
           ))}
         </View>
 
-        {/* Contatos */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Contatos</Text>
           
